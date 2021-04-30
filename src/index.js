@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './mycomponents/nav';
+import Login from './mycomponents/login';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <div className="container">
+   <Navbar />
+   <Login />
+ </div>,
   document.getElementById('root')
 );
 
